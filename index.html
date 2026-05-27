@@ -8,13 +8,21 @@
 <body>
   <script src="https://meet.jit.si/external_api.js"></script>
   <script>
-    var domain = "meet.jit.si";
-    var room = "JitsiMeetAPIExample";
-    var width = 700;
-    var height = 700;
-    var api = new JitsiMeetExternalAPI(domain, room, width, height);
+        var domain = "meet.jit.si";
+        var room = "JitsiMeetAPIExample";
+        var width = 700;
+        var height = 700;
+        var api = new JitsiMeetExternalAPI(domain, room, width, height);
+    var width = 800;             
+    var height = 800;            
+    var options = {
+        // Additional options can be included here
+    };
+    
+    var api = new JitsiMeetExternalAPI(domain, room, width, height, document.getElementById('jitsi-iframe'), options);
 </script>
 
+   
 
 
 
